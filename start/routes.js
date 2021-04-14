@@ -22,4 +22,5 @@ Route.on('/').render('welcome')
 // routes for api
 Route.group(() => {
 	Route.get('menu/user', 'API/MenuController.user')
+	Route.get('menu/admin', 'API/MenuController.admin')
 }).prefix('api')
